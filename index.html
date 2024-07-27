@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DesertRoad</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+    
+    <audio class="my_audio" controls loop="loop" autoplay="autoplay">
+        <source src="./Top50.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <section class="showcase">
+        <header>
+            <div class="fin">ça y est le moment est venu, la fin d'une époque</div>
+        </header>
+        
+
+        <video src="./DesertRoad.mp4" muted loop autoplay></video>
+
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h2>Nos routes se séparent...</h2>
+            <p></p>
+            <h3>...partons explorer d'autres horizons</h3>
+            <!-- <a href="#">Explore</a> -->
+
+            <p>Remerciements tout d'abord envers nos utilisateurs,<br />
+                &nbsp; <strong><i>Jean-Christophe</i></strong> et <strong><i>Antoine</i></strong> à la Messagerie en particulier, nos 1<sup>ers</sup> <q>connectés</q> habituels Centreon<br/>
+                &nbsp; <strong><i>Brice</i></strong>, <strong><i>Mélanie</i></strong>, <strong><i>Marie</i></strong>,
+                <strong><i>Patrick</i></strong>, <strong><i>Jorge</i></strong>, <strong><i>Olivier</i></strong> parmi nos collègues nantais,<br/>
+                &nbsp; <strong><i>&Eacute;ric</strong> à Lille et d'autres, à tous nos contacts auprès des Giires, et toutes celles et ceux qu'on oublie (sorry)<br/>
+            </p>
+
+            <p>Malgré nos difficultés et ce malheureux épilogue, good-luck pour la suite à toute l'équipe.<br/>
+                &nbsp; &Agrave; <strong><i>Jean-Baptiste</i></strong> et <strong><i>Romuald</i></strong>, nos experts Centreon, ... quel merveilleux outil de monitoring !!<br/>
+                &nbsp; &Agrave; <strong><i>Fredi I</i></strong>, un sacré garnement, un vrai vosgien tout simplement<span style="font-size:1.2em;">&#128514;</span>, au <strong><i>Fredo II</i></strong>, 
+                qui s'en va partir étudier l'entomologie et observer les mouches <span style="font-size:1.2em;">&#128029</span><br/>
+                &nbsp; &Agrave; <strong><i>Maud</i></strong>, la plus courageuse au milieu de tous ces brigands, pour son aide sur les rapports,<br/>
+                &nbsp; ...et puis <strong><i>Jean-François</i></strong>, notre dernier des mohicans, pour ses présentations et explications,<br/>
+                &nbsp; &Agrave; tous les anciens du Gepex passés à la sup' pour surveiller/alerter/intégrer/analyser/retranscrire
+                les incidents quotidiens sur le SI.<br/>
+                <!-- <br/>
+                N'&Eacute;TANT MALHEUREUSEMENT QU'UN PAUVRE FONCTIONNAIRE, MON CHEQUIER N'A M&Ecirc;ME PLUS UN SEUL FEUILLET POUR VOUS OFFRIR UN COUP &Agrave; BOIRE AU RESTO U,<br/>
+                C'EST LA D&Egrave;CHE COMME &Agrave; LA DSI ! Et puis j'ai mal à la tête, j'ai à présent carrément besoin de 2 buvards illicites sous forme de comprimés <q>ProxMox 500mg</q>.
+                <br/> -->
+                Allez, salut les p'tits clous... <span style="font-size:2em;">&#128075</span>
+            </p>
+            
+        </div>
+               
+        <!-- <ul class="social">
+            <li>
+                <a href="#"><img src="facebook.png" alt="facebook"></a>
+            </li>
+            <li>
+                <a href="#"><img src="twitter.png" alt="twitter"></a>
+            </li>
+            <li>
+                <a href="#"><img src="instagram.png" alt="instagram"></a>
+            </li>
+        </ul> -->
+
+    </section>
+
+    <div class="toggle">LES MEMBRES DE L'&Eacute;QUIPE, Tchachao</div>
+    <div class="menu">
+        <ul>
+            <li><a href="#">Maud BOURICAT</a></li>
+            <li><a href="#">Romuald GUIBBERT</a></li>
+            <li><a href="#">Jean-Christophe GROS</a></li>
+            <li><a href="#">Fr&eacute;d&eacute;ric PELLETIER</a></li>
+            <li><a href="#">Jean-Baptiste PINAULT</a></li>
+            <li><a href="#">Antonio SEDENO</a></li>
+            <li><a href="#">Fr&eacute;d&eacute;ric VILAIN</a></li>
+        </ul>
+    </div>
+
+    <script>
+        // window.onload=function(){
+        //     document.getElementsByClassName(".my_audio").play();
+        // }
+
+        const menuToggle = document.querySelector('.toggle');
+        const showCase = document.querySelector('.showcase');
+        const menuList = document.querySelector('.menu');
+
+        menuToggle.addEventListener('click', () =>{
+            menuToggle.classList.toggle('active')
+            // showCase.classList.toggle('active')
+            menuList.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>
