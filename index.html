@@ -8,10 +8,11 @@
 </head>
 <body>  
 
-    <embed class="my_audio" name="Tchachao" src="./Top50.mp3" loop="true" hidden="true" autostart="true">
-    <!-- <audio class="my_audio" controls loop="loop" autoplay="autoplay">
+    <!-- <embed class="my_audio" name="Tchachao" src="./Top50.mp3" loop="true" hidden="true" autostart="true"> -->
+    <!-- autoplay="autoplay" -->
+    <audio autoplay class="my_audio" controls loop="loop">
         <source src="./Top50.mp3" type="audio/mp3">
-    </audio> -->
+    </audio>
 
 
     <section class="showcase">
@@ -95,6 +96,11 @@
             // showCase.classList.toggle('active')
             menuList.classList.toggle('active')
         })
+
+        // window.onload = function() {
+        //     document.getElementsByClassName("my_audio").play();
+        // }
+
     </script>
 </body>
 </html>
