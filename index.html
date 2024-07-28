@@ -11,14 +11,15 @@
     <!-- <embed class="my_audio" name="Tchachao" src="./Top50.mp3" loop="true" hidden="true" autostart="true"> -->
     <!-- autoplay="autoplay" -->
     <!-- <audio autoplay class="my_audio" controls loop="loop"> -->
-    <audio id="my_audioId" class="my_audio" controls loop="loop">
-        <source src='https://raw.githubusercontent.com/s9d9n0/DesertRoad/blob/main/Top50.mp3' type='audio/mp3'>
-    </audio>
+    <!-- <audio id="my_audioId" class="my_audio" controls loop="loop">
+        <source src='./Top50.mp3' type='audio/mpeg'>
+    </audio> -->
 
 
     <section class="showcase">
         <header>
             <div class="fin">ça y est le moment est venu, la fin d'une époque</div>
+            <button id="play">PLAY MUSIC !!</button>
         </header>
         
 
@@ -101,7 +102,14 @@
         // window.onload = function() {
         //      document.getElementsByClassName("my_audio").play();
         // }
-        document.getElementById('my_audioId').play();
+        // document.getElementById('my_audioId').play();
+
+        let play = document.getElementById("play");
+        function playMusic(){
+            let audio = new Audio("Top50.mp3");
+            audio.play()
+        }
+        play.addEventListener("click",playMusic)
 
     </script>
 </body>
