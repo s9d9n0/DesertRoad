@@ -108,8 +108,9 @@
         function playMusic(){
             let audio = new Audio("Top50.mp3");
             audio.play()
+            play.style.display = "none";
         }
-        play.addEventListener("onload",playMusic)
+        play.addEventListener("click",playMusic)
 
     </script>
 </body>
